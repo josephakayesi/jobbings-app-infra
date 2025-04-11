@@ -1,5 +1,5 @@
-resource "aws_ecr_repository" "jobbings_ui" {
-  name                 = "jobbings-ui-${local.environment_suffix}"
+resource "aws_ecr_repository" "jobbings_app_ui" {
+  name                 = "${var.project_name}-ui-${local.environment_suffix}"
   image_tag_mutability = "MUTABLE" # or "IMMUTABLE" depending on your preference
 
   encryption_configuration {
