@@ -14,7 +14,7 @@ locals {
 
 # Define environment-specific variables
 variable "project_name" {
-  default = "jobbings-app-project" # Project name without environment suffix
+  default = "jobbings-app" # Project name without environment suffix
 }
 
 variable "environment" {
